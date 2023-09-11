@@ -1,0 +1,326 @@
+body {
+  background: #ffffff !important;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.test {
+  background: transparent url("../img/background.png") 0% 0% no-repeat padding-box;
+  padding-bottom: 10%;
+}
+.test .icon__container {
+  text-align: center;
+}
+.test .icon__container .icon {
+  width: 302px;
+  padding: 5px;
+}
+@media screen and (max-width: 576px) {
+  .test .icon__container .icon {
+    width: 250px;
+  }
+}
+.test .info__container {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
+.test .title {
+  font-size: 44px;
+}
+@media screen and (max-width: 576px) {
+  .test .title {
+    font-size: 30px;
+  }
+}
+.test .sub__tittle {
+  font-size: 53px;
+  color: #36414d;
+}
+@media screen and (max-width: 576px) {
+  .test .sub__tittle {
+    font-size: 40px;
+  }
+}
+.test .text {
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 25px;
+}
+@media screen and (max-width: 576px) {
+  .test .text {
+    font-size: 15px;
+  }
+}
+.test .logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.test .logo {
+  width: 200px;
+}
+.test .logo__gmat {
+  width: 230px;
+}
+@media screen and (max-width: 576px) {
+  .test .logo__gmat {
+    width: 150px;
+  }
+}
+.test .logo__toefl {
+  width: 250px;
+}
+@media screen and (max-width: 576px) {
+  .test .logo__toefl {
+    width: 150px;
+  }
+}
+.test .logo__gre {
+  width: 204px;
+}
+@media screen and (max-width: 576px) {
+  .test .logo__gre {
+    width: 150px;
+  }
+}
+
+.contact__section {
+  width: 90%;
+  margin: 0px auto;
+  padding: 2%;
+}
+.contact__section h2 {
+  font-size: 29px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 6%;
+}
+@media screen and (max-width: 576px) {
+  .contact__section h2 {
+    font-size: 25px;
+  }
+}
+.contact__section .contact__container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 407px;
+  margin: 0px auto;
+}
+.contact__section .form-label {
+  font-size: 16px;
+  color: #36414d;
+  font-weight: bold;
+}
+.contact__section button {
+  width: 160px;
+  height: 45px;
+  display: block;
+  margin: 0px auto;
+  background-color: #a8895b;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact__section button:hover {
+  background-color: #7a5702;
+}
+
+.banner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 100px 0px;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner__text {
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+@media screen and (max-width: 576px) {
+  .banner__text {
+    font-size: 25px;
+  }
+}
+
+.studysection {
+  background-color: #fafafa;
+  padding: 50px 0px 50px 0px;
+}
+.studysection figure {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+.studysection .title {
+  font-size: 29px;
+  font-weight: bold;
+  color: #36414d;
+}
+@media screen and (max-width: 576px) {
+  .studysection .title {
+    font-size: 25px;
+  }
+}
+.studysection .container__description {
+  padding: 50px 20px 50px 20px;
+}
+@media screen and (max-width: 576px) {
+  .studysection .container__description {
+    padding: 20px 10px 20px 10px;
+  }
+}
+.studysection .description {
+  font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  .studysection .description {
+    font-size: 15px;
+  }
+}
+.studysection .list {
+  color: #a8895b;
+  list-style: disclosure-closed;
+  margin-top: 10%;
+}
+.studysection .list li {
+  margin-bottom: 6%;
+}
+
+.students__container {
+  padding: 50px 20px 50px 20px;
+}
+.students__title-container {
+  color: #36414d;
+  text-align: center;
+}
+.students__title {
+  font-size: 32px;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 576px) {
+  .students__title {
+    font-size: 25px;
+  }
+}
+.students__card {
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px;
+}
+.students__image-container {
+  width: 100%;
+  padding: 10px;
+}
+.students__image {
+  width: 100%;
+}
+.students__name-students {
+  text-align: center;
+  font-size: 23px;
+  color: #36414d;
+  font-weight: bold;
+}
+.students__description {
+  font-size: 14px;
+  text-align: center;
+  color: #36414d;
+}
+
+.aboutme__container {
+  background-color: #fafafa;
+  padding: 50px 20px 50px 20px;
+}
+.aboutme__description-container {
+  width: 70%;
+  margin: 0px auto;
+}
+.aboutme__description {
+  text-align: left;
+  color: #36414d;
+}
+.aboutme__title {
+  font-size: 23px;
+  font-weight: bold;
+}
+.aboutme__text {
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 576px) {
+  .aboutme__text {
+    font-size: 15px;
+  }
+}
+.aboutme__subtitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+.aboutme__list {
+  list-style: none;
+  padding: 0px;
+}
+.aboutme__list li {
+  font-size: 18px;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 576px) {
+  .aboutme__list li {
+    font-size: 15px;
+  }
+}
+.aboutme__container-icon {
+  text-align: center;
+}
+.aboutme__icon {
+  width: 130px;
+}
+.aboutme__container-img {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+.aboutme__img {
+  max-width: 408px;
+  width: 100%;
+}
+
+.footer__container {
+  background-color: #ffffff;
+  padding: 30px;
+}
+@media screen and (max-width: 576px) {
+  .footer__container {
+    text-align: center;
+  }
+}
+.footer__text {
+  color: #36414d;
+  font-size: 16px;
+}
+.footer__link {
+  color: #36414d;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.footer__icon {
+  width: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.footer__link:hover {
+  color: #a27300;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,322 @@
+$color-basic01: #ffffff;
+$primary-color-01: #36414d;
+$primary-color-02: #a8895b;
+$primary-color-03: #fafafa;
+$primary-color-04: #bf8700;
+$font-stack: "Raleway", sans-serif;
+
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+body {
+  background: $color-basic01 !important;
+  padding: 0px;
+  margin: 0px;
+  font-family: $font-stack !important;
+  font-weight: 300 !important;
+}
+
+.test {
+  background: transparent url("../img/background.png") 0% 0% no-repeat
+    padding-box;
+
+  padding-bottom: 10%;
+  .icon__container {
+    text-align: center;
+    .icon {
+      width: 302px;
+      padding: 5px;
+      @include mobile {
+        width: 250px;
+      }
+    }
+  }
+  .info__container {
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .title {
+    font-size: 44px;
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  .sub__tittle {
+    font-size: 53px;
+    color: #36414d;
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+  .text {
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 25px;
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+
+  .logo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .logo {
+    width: 200px;
+    &__gmat {
+      width: 230px;
+      @include mobile {
+        width: 150px;
+      }
+    }
+    &__toefl {
+      width: 250px;
+      @include mobile {
+        width: 150px;
+      }
+    }
+    &__gre {
+      width: 204px;
+      @include mobile {
+        width: 150px;
+      }
+    }
+  }
+}
+
+.contact__section {
+  width: 90%;
+  margin: 0px auto;
+  padding: 2%;
+  h2 {
+    font-size: 29px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 6%;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+  .contact__container {
+    background-color: $color-basic01;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 407px;
+    margin: 0px auto;
+  }
+  .form-label {
+    font-size: 16px;
+    color: $primary-color-01;
+    font-weight: bold;
+  }
+  button {
+    width: 160px;
+    height: 45px;
+    display: block;
+    margin: 0px auto;
+    background-color: $primary-color-02;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: $primary-color-06;
+  }
+}
+
+.banner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 100px 0px;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  &__text {
+    font-size: 40px;
+    text-align: center;
+    color: $color-basic01;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+}
+
+.studysection {
+  background-color: $primary-color-03;
+  padding: 50px 0px 50px 0px;
+  figure {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .title {
+    font-size: 29px;
+    font-weight: bold;
+    color: $primary-color-01;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+  .container__description {
+    padding: 50px 20px 50px 20px;
+    @include mobile {
+      padding: 20px 10px 20px 10px;
+    }
+  }
+  .description {
+    font-size: 18px;
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+  .list {
+    color: $primary-color-02;
+    list-style: disclosure-closed;
+    margin-top: 10%;
+    li {
+      margin-bottom: 6%;
+    }
+  }
+}
+
+.students {
+  &__container {
+    padding: 50px 20px 50px 20px;
+  }
+  &__title-container {
+    color: $primary-color-01;
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+    margin-bottom: 2%;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+  &__card {
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+  }
+  &__image-container {
+    width: 100%;
+    padding: 10px;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__name-students {
+    text-align: center;
+    font-size: 23px;
+    color: $primary-color-01;
+    font-weight: bold;
+  }
+  &__description {
+    font-size: 14px;
+    text-align: center;
+    color: $primary-color-01;
+  }
+}
+
+.aboutme {
+  &__container {
+    background-color: $primary-color-03;
+    padding: 50px 20px 50px 20px;
+  }
+  &__description-container {
+    width: 70%;
+    margin: 0px auto;
+  }
+  &__description {
+    text-align: left;
+    color: $primary-color-01;
+  }
+  &__title {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 18px;
+    margin-bottom: 2%;
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+  &__subtitle {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &__list {
+    list-style: none;
+    padding: 0px;
+    li {
+      font-size: 18px;
+      margin-bottom: 3%;
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+  &__container-icon {
+    text-align: center;
+  }
+  &__icon {
+    width: 130px;
+  }
+  &__container-img {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  &__img {
+    max-width: 408px;
+    width: 100%;
+  }
+}
+
+.footer {
+  &__container {
+    background-color: $color-basic01;
+    padding: 30px;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  &__text {
+    color: $primary-color-01;
+    font-size: 16px;
+  }
+  &__link {
+    color: $primary-color-01;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  &__icon {
+    width: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  &__link:hover {
+    color: $primary-color-05;
+  }
+}
